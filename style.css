@@ -1,0 +1,74 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trainers-container {
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección del flex a columna */
+    align-items: center; /* Centramos horizontalmente los entrenadores */
+}
+
+.trainer {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: max-content; /* Ancho ajustado al contenido */
+}
+
+.trainer h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pokemon-container {
+    display: flex; /* Utilizamos flexbox */
+    justify-content: flex-start; /* Alineamos los pokémon al principio del contenedor */
+    flex-wrap: wrap; /* Permitimos que los pokémon se envuelvan en filas */
+    margin-top: 10px; /* Añadimos margen superior para separar de los entrenadores */
+}
+
+.pokemon {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.pokemon h3 {
+    margin-top: 0;
+}
+
+.pokemon img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Colores según tipo de Pokémon */
+.pokemon.planta {
+    border-color: green;
+}
+
+.pokemon.fuego {
+    border-color: red;
+}
+
+.pokemon.electrico {
+    border-color: yellow;
+}
+
+.pokemon.normal {
+    border-color: brown;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfrentamiento Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Entrenadores Pokémon</h1>
+    <div id="trainers-list" class="trainers-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- JSON directamente en el HTML -->
+    <script type="application/json" id="pokemon-data">
+        [
+            {
+                "entrenador": "Gary Owh",
+                "pokemons": [
+                    {
+                        "nombre": "Vinnasor",
+                        "tipo": "planta",
+                        "foto": "imagen/vinasor.png"
+                    },
+                    {
+                        "nombre": "Evee",
+                        "tipo": "normal",
+                        "foto": "imagen/evee.png"
+                    },
+                    {
+                        "nombre": "Charizar",
+                        "tipo": "fuego",
+                        "foto": "imagen/charizar.png"
+                    },
+                    {
+                        "nombre": "Pikachu",
+                        "tipo": "electrico",
+                        "foto": "imagen/pikachu.png"
+                    }
+                ]
+            },
+            {
+                "entrenador": "Ash Quetchu",
+                "pokemons": [
+                    {
+                        "nombre": "Vinnasor",
+                        "tipo": "planta",
+                        "foto": "imagen/vinasor.png"
+                    },
+                    {
+                        "nombre": "Evee",
+                        "tipo": "normal",
+                        "foto": "imagen/evee.png"
+                    },
+                    {
+                        "nombre": "Charizar",
+                        "tipo": "fuego",
+                        "foto": "imagen/charizar.png"
+                    },
+                    {
+                        "nombre": "Pikachu",
+                        "tipo": "electrico",
+                        "foto": "imagen/pikachu.png"
+                    }
+                ]
+            }
+        ]
+    </script>
+</body>
+</html>
